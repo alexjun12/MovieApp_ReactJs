@@ -1,5 +1,6 @@
 import Movie from "../components/Movie";
 import { useEffect, useState } from "react";
+import "../styles.css"
 
 function Home() {
     const [loading, setLoading] = useState(true);
@@ -13,7 +14,8 @@ function Home() {
     getMovies();
   },[]);
     return (
-    <div>
+    <div className="textFontAColor">
+      <h1 className="title">JUNFLIX</h1>
       {loading ? <h1>Loading...</h1> : <div>{movies.map((movie) => 
       <Movie 
         id = {movie.id}

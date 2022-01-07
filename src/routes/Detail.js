@@ -10,7 +10,7 @@ function Detail(){
         getMovie();
     },[])
     return (
-        <h1>Detail</h1>
+        <h1 className="title">JUNFLIX</h1>
     );
 }
 
